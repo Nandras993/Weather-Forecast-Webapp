@@ -1,0 +1,4 @@
+{
+  "API_KEY": "Your API key here",
+  "How_to_use": "Change the 'path' to CONFIG.json in backend.py"
+}
