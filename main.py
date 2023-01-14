@@ -29,7 +29,7 @@ if place:
             images = {"Clear": "images/clear.png", "Clouds": "images/cloud.png",
                       "Rain": "images/rain.png", "Snow": "images/snow.png"}
             sky_conditions = [dict["weather"][0]["main"] for dict in filtered_data]
-            sky_description = [f"{dict['weather'][0]['description']} {dict['dt_txt']} ----{dict['main']['temp']}°C----"
+            sky_description = [f"{dict['weather'][0]['description']} {dict['dt_txt']} -----{dict['main']['temp']}°C-----"
                                for dict in filtered_data]
             image_paths = [images[condition] for condition in sky_conditions]
             print(sky_conditions)
