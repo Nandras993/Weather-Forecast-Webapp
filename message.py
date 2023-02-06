@@ -1,15 +1,16 @@
 import smtplib
 import json
 from email.message import EmailMessage
+import streamlit as st
 
 path = "configuration.json"
 
 with open(path, "r") as handler:
     info = json.load(handler)
 
-sender = info["username"]
-password = info["password"]
-receiver = info["username"]
+sender = st.secrets("username")
+password = st.secrets("password")
+receiver = st.secrets("username")
 
 
 def send_mail(message):
