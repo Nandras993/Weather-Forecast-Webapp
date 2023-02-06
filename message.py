@@ -8,9 +8,9 @@ path = "configuration.json"
 with open(path, "r") as handler:
     info = json.load(handler)
 
-sender = st.secrets("username")
-password = st.secrets("password")
-receiver = st.secrets("username")
+sender = st.secrets["username"]
+password = st.secrets["password"]
+receiver = st.secrets["username"]
 
 
 def send_mail(message):
