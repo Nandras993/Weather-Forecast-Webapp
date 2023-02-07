@@ -2,4 +2,5 @@ venv
 .idea
 /App+Design.png
 /configuration.json
-/secrets.toml
+/.streamlit/secrets.toml
+/.streamlit/
