@@ -1,11 +1,6 @@
-import json
 import requests
 import streamlit as st
 
-#path = "configuration.json"
-
-#with open(path, 'r') as handler:
-    #info = json.load(handler)
 
 KEY = {"api": st.secrets["API_KEY"]}
 
