@@ -4,13 +4,13 @@ from email.message import EmailMessage
 import streamlit as st
 import toml
 
-path = "configuration.json"
+#path = "configuration.json"
 
 #with open(".streamlit/secrets.toml", "r") as handler:
     #info = toml.load(handler)
 
-with open(path, "r") as handler:
-    info = json.load(handler)
+#with open(path, "r") as handler:
+    #info = json.load(handler)
 
 Authentication = {"username": st.secrets["username"],
                   "password": st.secrets["password"]}
